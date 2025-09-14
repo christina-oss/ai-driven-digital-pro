@@ -1,31 +1,23 @@
 import { Brain, Rocket, Target, Users } from 'lucide-react';
-
 const About = () => {
-  const values = [
-    {
-      icon: Brain,
-      title: "AI-Powered Solutions",
-      description: "Leveraging cutting-edge AI tools to solve complex business challenges and drive innovation."
-    },
-    {
-      icon: Target,
-      title: "Results-Driven",
-      description: "Every strategy is designed with measurable outcomes and ROI at the forefront."
-    },
-    {
-      icon: Rocket,
-      title: "Innovation First",
-      description: "Staying ahead of digital trends to provide clients with competitive advantages."
-    },
-    {
-      icon: Users,
-      title: "Collaborative Approach",
-      description: "Working closely with teams to understand unique needs and deliver tailored solutions."
-    }
-  ];
-
-  return (
-    <section id="about" className="section-padding bg-gradient-card">
+  const values = [{
+    icon: Brain,
+    title: "AI-Powered Solutions",
+    description: "Leveraging cutting-edge AI tools to solve complex business challenges and drive innovation."
+  }, {
+    icon: Target,
+    title: "Results-Driven",
+    description: "Every strategy is designed with measurable outcomes and ROI at the forefront."
+  }, {
+    icon: Rocket,
+    title: "Innovation First",
+    description: "Staying ahead of digital trends to provide clients with competitive advantages."
+  }, {
+    icon: Users,
+    title: "Collaborative Approach",
+    description: "Working closely with teams to understand unique needs and deliver tailored solutions."
+  }];
+  return <section id="about" className="section-padding bg-gradient-card">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -66,7 +58,7 @@ const About = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <span className="text-muted-foreground">Based in [Your Location] with global remote experience</span>
+                    <span className="text-muted-foreground">Based in Accra-Ghana with global remote experience</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
@@ -88,13 +80,10 @@ const About = () => {
           {/* Values Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => {
-              const IconComponent = value.icon;
-              return (
-                <div 
-                  key={value.title}
-                  className="bg-card p-6 rounded-xl shadow-custom-md card-hover text-center animate-fade-up"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
+            const IconComponent = value.icon;
+            return <div key={value.title} className="bg-card p-6 rounded-xl shadow-custom-md card-hover text-center animate-fade-up" style={{
+              animationDelay: `${index * 0.1}s`
+            }}>
                   <div className="w-12 h-12 bg-gradient-accent rounded-lg flex items-center justify-center mx-auto mb-4">
                     <IconComponent className="w-6 h-6 text-accent-foreground" />
                   </div>
@@ -102,14 +91,11 @@ const About = () => {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {value.description}
                   </p>
-                </div>
-              );
-            })}
+                </div>;
+          })}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
