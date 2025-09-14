@@ -26,16 +26,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container-custom text-center text-white">
         <div className="max-w-4xl mx-auto animate-fade-up">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Transforming Ideas Into
-            <span className="block gradient-text bg-gradient-accent bg-clip-text text-transparent">
-              Digital Success
-            </span>
-          </h1>
+          <div className="mb-6">
+            <p className="text-lg md:text-xl text-white/80 mb-3">Hi, I'm</p>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
+              <span className="text-white">Your Name</span>
+              <span className="block gradient-text bg-gradient-accent bg-clip-text text-transparent mt-2">
+                Digital Innovator
+              </span>
+            </h1>
+          </div>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto leading-relaxed">
-            Digital Marketing Professional & AI Solutions Expert helping startups and agencies 
-            leverage cutting-edge technology to drive measurable business growth.
+            I'm a passionate digital marketing professional who transforms businesses through 
+            AI-powered solutions and cutting-edge web technologies. Let me help bring your vision to life.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
